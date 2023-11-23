@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Lilita+One&display=swap');
+
+body {
+  height: 90vh;
+  background-color:#6f99c5 !important;
+  background-image: url('./components/img/gatos_negros.png');
+
+}
+.navbar-brand{
+  font-family: 'Lilita+One','Nosifer';
+  font-size: 25px !important;
+}
+
+
+.app {
+  font-family: 'Arial', sans-serif; /* Establece la fuente para el cuerpo */
+  margin: 0;
+  padding: 0;
+  /* background-color: #c40c0c;  */
+  /* Cambia el color de fondo a un tono más oscuro */
+  color: #f31212; /* Establece el color del texto a blanco */
+  /*background: url('ruta/a/tu/imagen.jpg');*/
+}
+
+
+.container {
+  max-width: 1400px; /* Aumenta el ancho máximo del contenedor */
+  margin:  auto;
+  /*padding: 30px;  Reduzco el padding superior e inferior para un mejor diseño */
+  background-color: #050108;;
+  border-radius: 1em; /* Ajusto el radio de las esquinas para un mejor aspecto */
+  box-shadow: 30px 30px 30px 0px rgba(36, 29, 0, 0.3); /* Agrego una sombra para un efecto tridimensional */
+
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+
+.register {
+  /*position: relative;
+  left: 500px;  esta propiedad para ajustar la posición horizontalmente con respecto al contenedor padre */
+}
+
+ .header {
+  background-color: #0f1100;
+  color: #b40f0f;
+  padding: 10px 0;
+  text-align: center;
+
+} 
+
+.chat-box {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 10px 0px rgba(238, 6, 6, 0.1);
+  margin: 20px;
+}
+
+.member-list {
+  width: 20%;
+  background-color: #2b2f386e;
+  border-right: 3px solid #fc53050a;
+  border-left: 3px solid #13180f;
+  box-shadow: 20px 20px 30px 0px rgba(53, 39, 2, 0.3); /* Agrego una sombra para un efecto tridimensional */
+  box-decoration-break: 20px 20px 30px 0px rgba(51, 50, 5, 0.3); /* Agrego una sombra para un efecto tridimensional */
+
+  padding: 10px;
+}
+
+.member {
+  padding: 20px;
+  margin: 5px 0;
+  background-color: #5d6164;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.member.active {
+  background-color: #dcbaec2d;
+  color: #3b3636;
+}
+
+.member:hover {
+  background-color: #5e44f02d;
+  color: #f4f3fa;
+}
+
+.chat-content {/* color interno del chat */
+  width: 90%;
+  padding: 110px;
+  background-color: #42414f;
+}
+
+.chat-messages { /*tamaño de la barra del chat*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 0 rgba(231, 227, 227, 0.1);
+  background-color: #2a313f;
+
+}
+
+.message.self { /*mesanje que se envia*/
+  background-color: #afb1f3;
+  color: #0f0f0f;
+  align-self: flex-end;
+}
+
+.input-message { /*inpunt*/
+  flex: 1;
+  padding: 11px;
+  font-size: 17px;
+  border: 1px solid #171136;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button { /*boton de enviar */
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #d3afd3;
+  color: #ebe2e2;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #6f99c5;
+}
